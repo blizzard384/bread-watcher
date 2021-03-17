@@ -4,6 +4,7 @@ import at.berger.breadwatcher.model.BreadSession
 import at.berger.breadwatcher.service.BreadSessionService
 import org.springframework.web.bind.annotation.*
 
+@CrossOrigin(origins = ["http://localhost:3000","https://bread-watcher-fe.herokuapp.com"])
 @RestController
 @RequestMapping("/api/latest/bread-session")
 class BreadSessionController(val service: BreadSessionService) {
